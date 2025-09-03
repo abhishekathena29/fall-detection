@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "171974367468",
+    "firebase_url": "https://fall-detection-b17ee-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "fall-detection-b17ee",
+    "storage_bucket": "fall-detection-b17ee.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171974367468:android:cddba934bb5311f6ed6dc9",
+        "android_client_info": {
+          "package_name": "com.example.fall_detection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGz-xyDTh1PcX5KNISm3m9oqMDYAaJkVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
