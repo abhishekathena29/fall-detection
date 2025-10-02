@@ -97,12 +97,19 @@ void backgroundHandler(Location data) {
                   .doc(uid)
                   .get();
           final relatedToken = related.data()!['token'];
+
           await FCMNotificationApi().chatNotification(
             message,
             relatedToken,
             userModel.name,
           );
         }
+
+        await FirebaseFirestore.instance.collection('fall').add({
+          'uid': userModel.uid,
+          'message': message,
+          'createdAt': Timestamp.now(),
+        });
 
         await FirebaseFirestore.instance
             .collection('Devices')
