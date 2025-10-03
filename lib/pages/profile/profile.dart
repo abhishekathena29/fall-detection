@@ -4,6 +4,7 @@ import 'package:fall_detection/pages/add_user/add_user_page.dart';
 import 'package:fall_detection/pages/auth/login_page.dart';
 import 'package:fall_detection/pages/auth/user_model.dart';
 import 'package:fall_detection/pages/bluetooth/bluetooth_connection_page.dart';
+import 'package:fall_detection/pages/profile/fall_history_page.dart';
 import 'package:fall_detection/pages/profile/provider/profile_provider.dart';
 import 'package:fall_detection/util/utils.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -134,6 +135,18 @@ class _ProfilePageState extends State<ProfilePage> {
               },
             ),
 
+            const SizedBox(height: 20),
+
+            _buildSectionCard('Fall History', [
+              _buildListTile(
+                Icons.history_outlined,
+                'History',
+                'View your fall history',
+                () {
+                  moveTo(context, FallHistoryPage());
+                },
+              ),
+            ]),
             const SizedBox(height: 20),
 
             // App Settings

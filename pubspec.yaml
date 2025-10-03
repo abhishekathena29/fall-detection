@@ -49,6 +49,7 @@ dependencies:
   flutter_blue_plus: 
   geocoding: 
   geolocator: 
+  intl: 
 
 
 dev_dependencies:
